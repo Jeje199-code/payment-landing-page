@@ -1,0 +1,111 @@
+:root{
+    --clr-primary: #E9DCFF;
+    --white: #fff;
+    --clr-background: #1E1E1E;
+    --ff-primary: "Poppins", sans-serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* write your CSS here */
+body{
+    background-color: var(--clr-background);
+    font-family: var(--ff-primary);
+}
+
+button{
+    border: none;
+    background-color: var(--clr-primary);
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background-color 150ms ease-in-out;
+}
+
+button:hover{
+    background-color: #efe6ff;
+}
+
+.button-menu{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.header{
+    padding: 2rem 0rem;
+}
+.container{
+    max-width: 1208px;
+    width: min(1208px, 100% - 1rem * 2);
+    margin-inline: auto;
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list{
+    list-style: none;
+    gap: 2rem;
+    display: flex;
+}
+
+.nav-list a{
+    transition: color 150ms ease-in;
+}
+
+.nav-list a:hover{
+    color: var(--clr-primary);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 75vh;
+}
+
+.home-img{
+}
+
+.home-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-text h1{
+    font-size: 3rem;
+    color: var(--white);
+    margin-block: 1rem;
+}
+
+.home-text p{
+    font-weight: 300;
+    color: var(--clr-primary);
+    letter-spacing: 5px;
+}
